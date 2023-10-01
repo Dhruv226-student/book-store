@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore - Members</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        .profile-image {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .section-heading {
+            margin-top: 30px;
+        }
+        .card-img-top {
+            max-height: 200px;
+            object-fit: cover;
+        }
+       
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Online Bookstore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content for Members Page -->
+    <div class="container mt-5">
+        <h1>Member Information</h1>
+        <!-- Member information goes here -->
+        <div class="container mt-5">
+            <h1>Welcome, [Member Name]!</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Profile Image -->
+                    <img src="profile.jpg" alt="Profile" class="profile-image">
+                </div>
+                <div class="col-md-8">
+                    <!-- Member Profile -->
+                    <h2>Your Profile</h2>
+                    <ul>
+                        <li><strong>Username:</strong> [Username]</li>
+                        <li><strong>Email:</strong> [Email]</li>
+                        <li><strong>Membership Level:</strong> [Membership Level]</li>
+                        <li><strong>Joined:</strong> [Join Date]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Recent Orders -->
+            <div class="row section-heading">
+                <div class="col-md-12">
+                    <h2>Recent Orders</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><strong>Order #001</strong> - [Order Date]</li>
+                        <li><strong>Order #002</strong> - [Order Date]</li>
+                        <!-- Add more recent orders as needed -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Saved Books -->
+            <div class="row section-heading">
+                <div class="col-md-12">
+                    <h2>Saved Books</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Saved Book Card 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="saved_book1.jpg" class="card-img-top" alt="Saved Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Saved Book Title 1</h5>
+                            <p class="card-text">Author: Author Name 1</p>
+                            <p class="card-text">Price: $19.99</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saved Book Card 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="saved_book2.jpg" class="card-img-top" alt="Saved Book 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Saved Book Title 2</h5>
+                            <p class="card-text">Author: Author Name 2</p>
+                            <p class="card-text">Price: $24.99</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saved Book Card 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="saved_book3.jpg" class="card-img-top" alt="Saved Book 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Saved Book Title 3</h5>
+                            <p class="card-text">Author: Author Name 3</p>
+                            <p class="card-text">Price: $17.99</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more saved book cards as needed -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-2">
+        &copy; 2023 Online Bookstore
+    </footer>
+
+    <!-- Bootstrap JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
